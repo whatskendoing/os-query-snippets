@@ -1,0 +1,9 @@
+#Simple how to check for codesigning if you are using OsQuery:
+
+osquery> select * from signature where path = '/Applications/Xcode.app';
++-------------------------+----------------+--------+--------+--------------------+------------------------------------------+-----------------+----------------------------------+
+| path                    | hash_resources | arch   | signed | identifier         | cdhash                                   | team_identifier | authority                        |
++-------------------------+----------------+--------+--------+--------------------+------------------------------------------+-----------------+----------------------------------+
+| /Applications/Xcode.app | 1              |        | 1      | com.apple.dt.Xcode | 9cdd644291208d8af499827a0281df6744e04477 | 59GAB85EFG      | Apple Mac OS Application Signing |
+| /Applications/Xcode.app | 1              | x86_64 | 1      | com.apple.dt.Xcode | 9cdd644291208d8af499827a0281df6744e04477 | 59GAB85EFG      | Apple Mac OS Application Signing |
++-------------------------+----------------+--------+--------+--------------------+------------------------------------------+-----------------+----------------------------------+
