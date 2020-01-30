@@ -1,0 +1,12 @@
+Networking
+
+# Last Known Connection:
+SELECT network_name last_connection FROM wifi_networks;
++-----------------+
+| last_connection |
++-----------------+
+| WiFi            |
+| Some-WiFi       |
+| Another-WiFi    |
+| Yup-Wifi        |
++-----------------+
