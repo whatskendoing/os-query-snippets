@@ -1,0 +1,1 @@
+SELECT ke.NAME, ke.path, ke.version, sig.team_identifier FROM kernel_extensions ke JOIN signature sig on sig.path = ke.path WHERE NAME NOT LIKE "com.apple.%" AND NAME != "__kernel__" GROUP BY ke.path ORDER BY NAME;
